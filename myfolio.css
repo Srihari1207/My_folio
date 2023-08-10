@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+*{
+    font-family: 'Playfair Display', serif;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.bgpiccls{
+  background-image: url(/IMG_2721-3.JPG) ;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center center;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    height: 5em;
+    margin-bottom: 20px;
+}
+
+header h1{
+    margin-left: 20px;
+    font-size: 3em;
+    margin-top: 20px;
+}
+
+.resumebutt{
+    margin-right: 20px;
+    width:11em;
+    height: 3em;
+    background-color: yellow;
+    color: black;
+    font-size: 1em;
+    font-weight: bolder;
+    border: 0.5px solid red;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.resumebutt:hover{
+    background-color: red;
+    color: white;
+    border: 0.5px solid yellow;
+    border-radius: 6px;
+}
+
+.imageclass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imageclass img{
+    height: 18em;
+    border-radius: 80%;
+}
+
+.imageclass h1{
+    font-size: 3em;
+    letter-spacing: 10px;
+}
+
+.iconsclass{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    cursor: pointer;
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.downarrowclass{
+    text-align: center;
+    margin-top: 70px;
+    cursor: pointer;
+}
+
+.skillclass:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.skillclass h1{
+    margin-top: 20px;
+    font-size: 3em;
+    letter-spacing: 20px;
+    text-align: center;
+}
+
+.container{
+    float: left;
+    width: 48%;
+    margin-left: 20px;
+}
+
+@keyframes load{
+    from {
+      width: 1%;
+    }
+}
+  @-webkit-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-moz-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-o-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .container {
+      width: 100%;
+    }
+  }
+  .bar{
+    background-color: grey;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: white;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  .bar::before{
+    content:  attr(data-skill);
+    background-color: navy;
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    animation: load 3s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+  }
+  
+  .bar.front::before{
+    background-color:navy;
+  }
+  .bar.back::before{
+    background-color: red;
+  }
+  
+  .bar.learning::before{
+    width: calc(90% - 10px);
+  }
+  .bar.basic::before{
+    width: calc(70% - 10px);
+  }
+  .bar.intermediate::before{
+    width: calc(50% - 10px);
+  }
+  .bar.advanced::before{
+    width: calc(75% - 10px);
+  }
+  .bar.expert::before{
+    width: calc(95% - 10px);
+  }
+
+
+
+  .bar1{
+    background-color: grey;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: white;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  .bar1::before{
+    content:  attr(data-skill);
+    background-color: red;
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+  }
+  
+  .bar1.front::before{
+    background-color:red;
+  }
+  .bar1.back::before{
+    background-color: navy;
+  }
+  
+  .bar1.learning::before{
+    width: calc(80% - 10px);
+  }
+  .bar1.basic::before{
+    width: calc(90% - 10px);
+  }
+  .bar1.intermediate::before{
+    width: calc(60% - 10px);
+  }
+  .bar1.advanced::before{
+    width: calc(55% - 10px);
+  }
+  .bar1.expert::before{
+    width: calc(70% - 10px);
+  }
+
+@media (max-width:1000px){
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+  .whoiamclass:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .whoiamclass h1{
+    font-size: 3em;
+    letter-spacing: 10px;
+    text-align: center;
+  }
+  .whoiamclass p{
+    font-size: 1.5em;
+    text-align: justify;
+    margin-left: 2em;
+    margin-right: 2em;
+    text-transform:capitalize;
+    line-height: 2em;
+  }
+
+.getintouchcls h1{
+  font-size: 3em;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+  input[type=text], select, textarea{
+    width: 50%;
+    padding:15px;
+    border: 2px dashed black;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 6px;
+  }
+  
+  input[type=submit] {
+    background-color: yellow;
+    font-size: larger;
+    font-weight: bolder;
+    color:black;
+    padding: 12px 20px;
+    border: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: red;
+    color: white;
+  }
+
+  #themebutt{
+    width:7em;
+    height: 3em;
+    background-color:white;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-right: 20px;
+    position: fixed;
+    cursor: pointer;
+    bottom: 10px;
+    right: 10px;
+  }
+#themebutt:hover{
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+
+@media screen and (max-width: 600px) {
+  header {
+      flex-direction: column;
+      align-items: center;
+  }
+  header h1 {
+      margin: 20px 0;
+  }
+  .resumebutt {
+      width: 100%;
+      display: flex;
+  }
+  .imageclass img {
+      height: 12em;
+  }
+  .iconsclass {
+      flex-wrap: wrap;
+  }
+  .container {
+      width: 100%;
+  }
+  input[type="text"],
+  select,
+  textarea {
+      width: 100%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1000px) {
+  .container {
+      margin-left: auto;
+      margin-right: auto;
+  }
+}

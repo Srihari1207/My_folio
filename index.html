@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="myfolio.css" class="css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Not-Jus-A-Developer</title>
+</head>
+<body>
+    <div class="bgpiccls">
+    <header>
+        <h1>My-Folio</h1>
+        <a href="https://drive.google.com/drive/u/1/my-drive" target="_blank"><button class="resumebutt">Resume</button></a>
+    </header>
+
+    <main>
+        <button  onclick="myFunction()" id="themebutt">THEME</button>
+        <div class="imageclass">
+            <img src="/IMG_2564-2.JPG" alt="">
+            <h1>SRI HARI</h1>
+        </div>
+
+        <div class="iconsclass">
+            <a href="https://www.facebook.com/profile.php?id=100009414571624" target="_blank"><i class="fa-brands fa-facebook fa-2xl" style="color: black;"></i></a>
+            <a href="https://www.instagram.com/_sri_hari______/" target="_blank"><i class="fa-brands fa-instagram fa-2xl" style="color: black;"></i></a>
+            <a href="https://www.linkedin.com/in/sri-hari-k-262050247/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl" style="color: #000000;"></i></a>
+            <a href="https://twitter.com/SriHari02498524" target="_blank"><i class="fa-brands fa-twitter fa-2xl" style="color: #000000;"></i></a>
+            <a href="https://github.com/Sri12701" target="_blank"><i class="fa-brands fa-github fa-2xl" style="color: #000000;"></i></a>
+            <a href="mailto:srihari1272001@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-2xl" style="color: #050505;"></i></a>
+        </div>
+
+        <div class="downarrowclass">
+            <i class="fa-solid fa-angles-down fa-2xl" style="color: red;"></i>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+
+    <div class="whoiamclass">
+        <h1>WHO I AM</h1>
+        <br>
+        <p class="container2"> " I'm a <b>self learnt coder</b> who's learning <b>Fullstack Development.</b> I recently graduated from <i>Dr. N.G.P Institute of Technology</i> with an Engineering degree in <i>Electronics and Communication.</i> I'm a <b>self-motivated and hardworking</b> individual & being passionate about <i>building websites</i> and <i>solving problems with code,</i> and too delighted to collaborate with other <b>fantastic programmers </b>to learn even more! " </p>
+    </div>
+
+        <div class="skillclass">
+            <h1>SKILLSET</h1>
+            <br>
+            <div class="container">
+                <h1>Tech Skills</h1>
+                <br>
+                <div class="bar learning" data-skill="C"></div>
+                <div class="bar back basic" data-skill="C++"></div>
+                <div class="bar back intermediate" data-skill="Java"></div>
+                <div class="bar back advanced" data-skill="CSS"></div>
+                <div class="bar front expert" data-skill="HTML"></div>
+              </div>
+
+              <div class="container">
+                <h1>Soft Skills</h1>
+                <br>
+                <div class="bar1 learning" data-skill="Fast learning"></div>
+                <div class="bar1 back basic" data-skill="Team Working"></div>
+                <div class="bar1 back intermediate" data-skill="Presentation"></div>
+                <div class="bar1 back advanced" data-skill="Problem Solving"></div>
+                <div class="bar1 front expert" data-skill="Working Under Pressure"></div>
+                <br>
+              </div>
+        </div>
+
+        <div class="getintouchcls">
+            <h1>GET IN TOUCH</h1>
+            <center><form>
+                <label style="font-size: 1em;" for="fname">First Name:</label>
+                <br>
+                <input type="text" id="fname" name="firstname" placeholder="Your First Name..">
+                <br>
+            
+                <label style="font-size: 1em;" for="lname">Last Name:</label>
+                <br>
+                <input type="text" id="lname" name="lastname" placeholder="Your Last Name..">
+                <br>
+            
+                <label style="font-size: 1em;" for="country">Country:</label>
+                <br>
+                <select id="country" name="country">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                  <option value="china">China</option>
+                  <option value="india">India</option>
+                  <option value="korea">Korea</option>
+                </select>
+                <br>
+            
+                <textarea id="subject" name="subject" placeholder="Write Anything.."></textarea>
+                <br>
+            
+                <a href="mailto:srihari1272001@gmail.com""><input type="submit" value="Submit"></a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+              </form>
+            </center>
+        </div>
+
+       <center> <h3>© 2023 By Sri Hari With &#10084;. All Rights Reserved </h3> </center>
+       <br>
+    </main>
+ 
+    <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+        </script>
+</body>
+</html>
